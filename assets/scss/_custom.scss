@@ -1,0 +1,28 @@
+// Here you can add other styles
+
+.user   {
+    height: 55px;
+    padding-top: 15px;
+    padding-left:   10px;
+    padding-right:  13px;
+    margin-bottom: 1px;
+
+    &:hover{
+        background-color:   $gray-100;
+    }
+}
+
+.userName   {
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.userLogoPc {
+    font-size: 1.5em;
+    padding-right: 5px;
+}
+
+.caret-down {
+    font-size:  15px;
+}

@@ -1,0 +1,9 @@
+apps:
+  - script      : 'npm'
+    args        : 'start'
+    name        : 'backoffice-web'
+    instances   : 1
+    exec_mode   : cluster
+    watch       : false
+    out_file    : '/dev/null'
+    error_file  : '/dev/null'

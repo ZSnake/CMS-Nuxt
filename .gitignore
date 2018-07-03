@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+.nuxt
+dist
+.env
+package-lock.json
+.idea
+.vscode
+.DS_Store
+sdet_test/reports/*

@@ -1,0 +1,14 @@
+# dependencies
+node_modules
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+package-lock.json
+
+# Grunt Config
+Gruntfile.js
+
+sdet_test

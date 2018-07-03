@@ -1,0 +1,72 @@
+{
+  "name": "backoffice-web",
+  "version": "1.0.0",
+  "description": "Modal Rakyat - Backoffice Web",
+  "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3001"
+    }
+  },
+  "scripts": {
+    "dev": "nuxt --spa",
+    "build": "nuxt build --spa",
+    "start": "nuxt start --spa",
+    "generate": "nuxt generate",
+    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "clear:babel-cache": "rimraf -rf ./node_modules/.cache/babel-loader/*"
+  },
+  "keywords": [
+    "backoffice-web",
+    "modalrakyat",
+    "website"
+  ],
+  "author": "Christian Hanggra",
+  "license": "MIT",
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.1.1",
+    "ajv": "^6.5.1",
+    "ajv-keywords": "^3.2.0",
+    "axios": "^0.18.0",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "js-cookie": "^2.2.0",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "node-sass": "^4.9.0",
+    "nuxt": "^1.4.1",
+    "nuxt-oauth": "1.0.1",
+    "sass-loader": "^7.0.3",
+    "vee-validate": "^2.0.9",
+    "vue": "^2.5.16",
+    "vue-base64-file-upload": "^1.0.4",
+    "vue-i18n": "^7.6.0",
+    "vue-notification": "^1.3.12",
+    "vue-select": "^2.4.0",
+    "vue-server-renderer": "^2.5.16",
+    "vue-the-mask": "^0.11.1",
+    "vuejs-datepicker": "^1.5.2",
+    "vuejs-paginate": "^1.9.3",
+    "vuex": "^3.0.1",
+    "vuex-persistedstate": "^2.5.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-html": "^4.0.5",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-vue": "4.5.0",
+    "jsdom": "^11.11.0"
+  }
+}
