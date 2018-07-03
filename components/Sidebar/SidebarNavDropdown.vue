@@ -26,7 +26,8 @@ export default {
     isSelected: Boolean
   },
   computed: {
-    // We set a computed variable that checks isSelected and sets a class to open or empty depending on this
+    // We set a computed variable that checks
+    // isSelected and sets a class to open or empty depending on this
     // isSelected is a prop sent by the parent component
     openClass() {
       const c = this.isSelected ? 'open' : '';
@@ -36,9 +37,12 @@ export default {
   methods: {
     handleClick(e) {
       e.preventDefault();
-      // When we click each dropdown we emit an event that will be listened to and handled by the parent component
-      // We send a selected name to be set in the parent component; if the clicked item is already selected,
-      // It'll send empty so the class is 'toggled' and the dropdown closes. If it's _not_ selected it'll send the name
+      // When we click each dropdown we emit an event that will
+      // be listened to and handled by the parent component
+      // We send a selected name to be set in the parent component;
+      // if the clicked item is already selected,
+      // It'll send empty so the class is 'toggled' and the dropdown closes.
+      // If it's _not_ selected it'll send the name
       this.$emit('set-selected', this.isSelected ? '' : this.name);
     }
   }

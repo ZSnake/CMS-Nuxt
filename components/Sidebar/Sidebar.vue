@@ -19,12 +19,22 @@
             <template v-if="item.children">
               <!-- First level dropdown -->
               <!--
-                We pass in is-selected as prop which calls the isSelected function and checks
-                the name of the generated dropdown to see if that's the one that's currently selected. It passes true/false
-                We also _listen_ to the 'set-selected' event with the v-on:set-selected passing in setSelectedItem as a reaction
+                We pass in is-selected as prop which calls the isSelected
+                function and checks
+                the name of the generated dropdown to see if that's the one that's
+                currently selected. It passes true/false
+                We also _listen_ to the 'set-selected' event with the v-on:set-selected passing
+                in setSelectedItem as a reaction
                 The rest of the work is done in the child component.
               -->
-              <SidebarNavDropdown :is-selected="isSelected(item.name)" v-on:set-selected="setSelectedItem" :name="item.name" :url="item.url" :icon="item.icon" v-bind:key="item.key">
+              <SidebarNavDropdown
+                :is-selected="isSelected(item.name)"
+                v-on:set-selected="setSelectedItem"
+                :name="item.name"
+                :url="item.url"
+                :icon="item.icon"
+                v-bind:key="item.key"
+              >
                 <template v-for="(childL1) in item.children">
                   <template v-if="childL1.children">
                     <!-- Second level dropdown -->
@@ -98,10 +108,14 @@ export default {
   },
   methods: {
     setSelectedItem(itemName) {
-      this.selectedItemName = itemName; // Method that receives an itemName and sets it as the currently seelcted. There can only be one so there will always be just one selected item.
+      // Method that receives an itemName and sets it as the currently seelcted.
+      // There can only be one so there will always be just one selected item.
+      this.selectedItemName = itemName;
     },
     isSelected(itemName) {
-      return this.selectedItemName === itemName; // Method that receives a dropdown item name and compares it to the currently selected item name.
+      // Method that receives a dropdown item name and
+      // compares it to the currently selected item name.
+      return this.selectedItemName === itemName;
     }
   }
 };
